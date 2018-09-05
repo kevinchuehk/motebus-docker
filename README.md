@@ -7,6 +7,6 @@ docker build -t motechat/bus-stack .
 
 ### run
 
-docker run -d -p 6780/tcp:6780 motechat/bus-stack 
+docker run -d -p 6780:6780/tcp motechat/bus-stack 
 
 docker run -d --net=host motechat/bus-stack
