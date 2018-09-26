@@ -1,4 +1,6 @@
 FROM ubuntu:bionic
+ENV PORT=6780
+ENV NAME=
 COPY BusStack_Linux64 /bin/
-EXPOSE 6780/tcp
-ENTRYPOINT ["/bin/BusStack_Linux64"] 
+EXPOSE ${PORT}
+CMD /bin/BusStack_Linux64 -p ${PORT} -n ${NAME} 
