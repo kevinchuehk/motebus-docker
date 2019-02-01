@@ -1,7 +1,8 @@
 FROM ubuntu:bionic
-ENV PORT=6788
+ENV PORT=6789
 ENV NAME=
 ENV ADDR=0.0.0.0 
-COPY BusStack_Linux64 /bin/
+COPY mbStack_L64 /bin/
 EXPOSE ${PORT}
-CMD /bin/BusStack_Linux64 -p ${PORT} -n ${NAME} -g ${ADDR}
+CMD /bin/mbStack_L64 -p ${PORT} -n ${NAME} -g ${ADDR}
+
